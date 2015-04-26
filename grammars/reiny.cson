@@ -1,40 +1,40 @@
 'fileTypes': [
-  'jade'
+  'reiny'
 ]
-'name': 'Jade'
+'name': 'Reiny'
 'patterns': [
   {
     'captures':
       '1':
-        'name': 'keyword.control.import.include.jade'
+        'name': 'keyword.control.import.include.reiny'
     'match': '^\\s*\\b(include)\\b'
   }
   {
     'match': '^(!!!)(\\s*[a-zA-Z0-9-_]+)?'
-    'name': 'keyword.other.doctype.jade'
+    'name': 'keyword.other.doctype.reiny'
   }
   {
     'captures':
       '1':
-        'name': 'punctuation.section.comment.jade'
+        'name': 'punctuation.section.comment.reiny'
     'match': '^\\s*(//-?)(?:\\s*[^-\\s]|\\s+\\S).*$\\n?'
-    'name': 'comment.line.double-slash.jade'
+    'name': 'comment.line.double-slash.reiny'
   }
   {
     'begin': '^(\\s*)(//-?)\\s*$'
     'beginCaptures':
       '2':
-        'name': 'punctuation.section.comment.jade'
+        'name': 'punctuation.section.comment.reiny'
     'end': '^(?!\\1\\s+|$)'
-    'name': 'comment.block.jade'
+    'name': 'comment.block.reiny'
   }
   {
     'begin': '^(\\s*)(\\:markdown)'
     'beginCaptures':
       '2':
-        'name': 'entity.name.function.jade'
+        'name': 'entity.name.function.reiny'
     'end': '^(?!\\1\\s+)'
-    'name': 'meta.filter.markdown.jade'
+    'name': 'meta.filter.markdown.reiny'
     'patterns': [
       {
         'include': 'text.html.markdown'
@@ -45,9 +45,9 @@
     'begin': '^(\\s*)(\\:sass)'
     'beginCaptures':
       '2':
-        'name': 'entity.name.function.jade'
+        'name': 'entity.name.function.reiny'
     'end': '^(?!\\1\\s+)'
-    'name': 'meta.filter.sass.jade'
+    'name': 'meta.filter.sass.reiny'
     'patterns': [
       {
         'include': 'source.sass'
@@ -58,9 +58,9 @@
     'begin': '^(\\s*)(\\:less)'
     'beginCaptures':
       '2':
-        'name': 'entity.name.function.jade'
+        'name': 'entity.name.function.reiny'
     'end': '^(?!\\1\\s+)'
-    'name': 'meta.filter.less.jade'
+    'name': 'meta.filter.less.reiny'
     'patterns': [
       {
         'include': 'source.css.less'
@@ -71,9 +71,9 @@
     'begin': '^(\\s*)(\\:coffeescript)'
     'beginCaptures':
       '2':
-        'name': 'entity.name.function.jade'
+        'name': 'entity.name.function.reiny'
     'end': '^(?!\\1\\s+)(?=\\s*.)'
-    'name': 'meta.filter.coffee.jade'
+    'name': 'meta.filter.coffee.reiny'
     'patterns': [
       {
         'include': 'source.coffee'
@@ -84,40 +84,40 @@
     'begin': '^(\\s*)(\\:cdata)'
     'beginCaptures':
       '2':
-        'name': 'entity.name.function.jade'
+        'name': 'entity.name.function.reiny'
     'end': '^(?!\\1\\s+)'
-    'name': 'meta.filter.cdata.jade'
+    'name': 'meta.filter.cdata.reiny'
   }
   {
     'captures':
       '1':
-        'name': 'storage.type.function.jade'
+        'name': 'storage.type.function.reiny'
       '2':
-        'name': 'entity.name.function.jade'
+        'name': 'entity.name.function.reiny'
       '3':
-        'name': 'punctuation.definition.parameters.begin.jade'
+        'name': 'punctuation.definition.parameters.begin.reiny'
       '4':
-        'name': 'variable.parameter.function.jade'
+        'name': 'variable.parameter.function.reiny'
       '5':
-        'name': 'punctuation.definition.parameters.end.jade'
+        'name': 'punctuation.definition.parameters.end.reiny'
     'comment': 'match stuff like: mixin dialog-title-desc(title, desc)'
     'match': '^\\s*(mixin) ([\\w\\-]+)\\s*(\\()(.*?)(\\))'
-    'name': 'meta.mixin.jade'
+    'name': 'meta.mixin.reiny'
   }
   {
     'captures':
       '1':
-        'name': 'storage.type.function.jade'
+        'name': 'storage.type.function.reiny'
       '2':
-        'name': 'entity.name.function.jade'
+        'name': 'entity.name.function.reiny'
     'comment': 'match stuff like: mixin dialog-title-desc'
     'match': '^\\s*(mixin) ([\\w\\-]+)'
-    'name': 'meta.mixin.jade'
+    'name': 'meta.mixin.reiny'
   }
   {
     'begin': '^\\s*(-|=|!=)'
     'end': '$'
-    'name': 'source.js.embedded.jade'
+    'name': 'source.js.embedded.reiny'
     'patterns': [
       {
         'include': 'source.js'
@@ -132,9 +132,9 @@
     'begin': '^(\\s*)(script)'
     'beginCaptures':
       '2':
-        'name': 'entity.name.tag.script.jade'
+        'name': 'entity.name.tag.script.reiny'
     'end': '^((?=(\\1)([\\w#\\.]|$\\n?))|^$\\n?)'
-    'name': 'source.js.embedded.jade'
+    'name': 'source.js.embedded.reiny'
     'patterns': [
       {
         'begin': '(?<=script)\\s*\\('
@@ -152,32 +152,32 @@
   }
   {
     'match': '[#!]\\{[^\\}]+\\}'
-    'name': 'string.interpolated.jade'
+    'name': 'string.interpolated.reiny'
   }
   {
     'begin': '^\\s*(?!\\w+\\:)(?:(([\\w]+))|(?=\\.|#))'
     'captures':
       '1':
-        'name': 'meta.tag.any.jade'
+        'name': 'meta.tag.any.reiny'
       '2':
-        'name': 'entity.name.tag.jade'
+        'name': 'entity.name.tag.reiny'
     'comment': 'Match any tag, id or class. skip AST filters'
     'end': '$|(?!\\.|#|=|-)'
     'patterns': [
       {
         'match': '\\.[\\w-]+'
-        'name': 'meta.tag.attribute.class.jade'
+        'name': 'meta.tag.attribute.class.reiny'
       }
       {
         'match': '#[\\w-]+'
-        'name': 'meta.tag.attribute.id.jade'
+        'name': 'meta.tag.attribute.id.reiny'
       }
     ]
   }
   {
     'begin': '(?<=\\w)\\s*\\('
     'end': '\\)'
-    'name': 'meta.tag.attribute.jade'
+    'name': 'meta.tag.attribute.reiny'
     'patterns': [
       {
         'include': '#tag-stuff'
@@ -191,15 +191,15 @@
       {
         'captures':
           '1':
-            'name': 'punctuation.definition.entity.jade'
+            'name': 'punctuation.definition.entity.reiny'
           '3':
-            'name': 'punctuation.definition.entity.jade'
+            'name': 'punctuation.definition.entity.reiny'
         'match': '(&)([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+)(;)'
-        'name': 'constant.character.entity.jade'
+        'name': 'constant.character.entity.reiny'
       }
       {
         'match': '&'
-        'name': 'invalid.illegal.bad-ampersand.jade'
+        'name': 'invalid.illegal.bad-ampersand.reiny'
       }
     ]
   'filter-langs':
@@ -231,12 +231,12 @@
     'begin': '"'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.jade'
+        'name': 'punctuation.definition.string.begin.reiny'
     'end': '"'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.jade'
-    'name': 'string.quoted.double.jade'
+        'name': 'punctuation.definition.string.end.reiny'
+    'name': 'string.quoted.double.reiny'
     'patterns': [
       {
         'include': '#entities'
@@ -246,12 +246,12 @@
     'begin': '\''
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.jade'
+        'name': 'punctuation.definition.string.begin.reiny'
     'end': '\''
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.jade'
-    'name': 'string.quoted.single.jade'
+        'name': 'punctuation.definition.string.end.reiny'
+    'name': 'string.quoted.single.reiny'
     'patterns': [
       {
         'include': '#entities'
@@ -259,7 +259,7 @@
     ]
   'tag-generic-attribute':
     'match': '\\b([a-zA-Z\\-:]+)'
-    'name': 'entity.other.attribute-name.jade'
+    'name': 'entity.other.attribute-name.reiny'
   'tag-stuff':
     'patterns': [
       {
@@ -272,4 +272,4 @@
         'include': '#tag-generic-attribute'
       }
     ]
-'scopeName': 'source.jade'
+'scopeName': 'source.reiny'

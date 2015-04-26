@@ -1,6 +1,6 @@
-atom-jade
+atom-reiny
 =========
 
-Jade language support in Atom Editor.
+Reiny language support in Atom Editor.
 
-Originally converted from the [Jade TextMate bundle](https://github.com/davidrios/jade-tmbundle) and adapted for Atom.
+Originally converted from the [Reiny TextMate bundle](https://github.com/davidrios/reiny-tmbundle) and adapted for Atom.
