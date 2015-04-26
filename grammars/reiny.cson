@@ -186,6 +186,10 @@
         'match': '#[\\w-]+'
         'name': 'meta.tag.attribute.id.reiny'
       }
+      {
+        'match': '\\&[\\w-]+'
+        'name': 'meta.tag.attribute.ref.reiny'
+      }
     ]
   }
   {
