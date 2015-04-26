@@ -115,6 +115,20 @@
     'name': 'meta.mixin.reiny'
   }
   {
+    'begin': '^\\s*---\\n'
+    'end': '^\\s*---\\n'
+    'name': 'source.js.embedded.reiny'
+    'patterns': [
+      {
+        'include': 'source.js'
+      }
+      {
+        'match': '\\b(each)\\b'
+        'name': 'keyword.control.js'
+      }
+    ]
+  }
+  {
     'begin': '^\\s*(-|=|!=)'
     'end': '$'
     'name': 'source.js.embedded.reiny'
