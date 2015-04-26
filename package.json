@@ -1,6 +1,6 @@
 {
   "name": "language-reiny",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Reiny language support in Atom",
   "main": "index.js",
   "scripts": {
