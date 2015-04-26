@@ -1,6 +1,6 @@
 {
-  "name": "atom-reiny",
-  "version": "0.1.0",
+  "name": "language-reiny",
+  "version": "0.0.0",
   "description": "Reiny language support in Atom",
   "main": "index.js",
   "scripts": {
@@ -8,18 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/merrihew/atom-reiny"
+    "url": "https://github.com/mizchi/language-reiny"
   },
   "keywords": [
     "atom",
     "reiny"
   ],
-  "author": "Tom Merrihew <tom.merrihew@gmail.com>",
+  "author": "mizchi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/merrihew/atom-reiny/issues"
+    "url": "https://github.com/mizchi/language-reiny/issues"
   },
-  "homepage": "https://github.com/merrihew/atom-reiny",
+  "homepage": "https://github.com/mizchi/language-reiny",
   "engines": {
     "atom": "*",
     "node": "*"

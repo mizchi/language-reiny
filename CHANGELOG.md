@@ -1,4 +1,4 @@
 <a name="0.1.0"></a>
 ## 0.1.0
 
-Initial release of `atom-reiny`.
+Initial release of `language-reiny`.
